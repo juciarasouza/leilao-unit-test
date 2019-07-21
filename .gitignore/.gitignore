@@ -21,15 +21,15 @@
 
 #idea files
 .idea/
-.settings
+.settings/*
 .classpath
-.project
-.vscode
+.project/*
+.vscode/*
 *.iml
-/target
+/target/*
 
 #mac files
-._.DS_Store
+*.DS_Store
 
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
