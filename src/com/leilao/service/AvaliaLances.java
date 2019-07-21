@@ -12,6 +12,7 @@ public class AvaliaLances {
 
 	private double valorMaiorQue = Double.NEGATIVE_INFINITY;
 	private double valorMenorQue = Double.POSITIVE_INFINITY;
+	private double 
 	private double total = 0;
 	private double mediaValores = 0;
 	private List<Lance> maioresLances;
@@ -27,6 +28,8 @@ public class AvaliaLances {
 				valorMaiorQue = lance.getValorLance();
 			if (lance.getValorLance() < valorMenorQue)
 				valorMenorQue = lance.getValorLance();
+			
+			
 
 			total += lance.getValorLance();
 		}
