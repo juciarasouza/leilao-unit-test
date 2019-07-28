@@ -40,6 +40,18 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>org.pitest</groupId>
+				<artifactId>pitest-maven</artifactId>
+				<version>1.4.9</version>
+				<configuration>
+					<outputFormats>
+						<outputFormat>CSV</outputFormat>
+						<outputFormat>HTML</outputFormat>
+					</outputFormats>
+				</configuration>
+			</plugin>
+			
 		</plugins>
 	</build>
 	<reporting>

@@ -31,6 +31,20 @@ public class TesteAvaliaLances {
 		this.avaliador = new AvaliaLances();
 
 	}
+	
+	@Test
+	public void deveAvaliarLimiteMaiorValor() {
+		
+		//cria um leilao e passa os primeiros lances
+		leilao = new CriaNovoLeilao().novoLeilao("Leilao de tipos de testes").lance(Ana, 200).lance(Pedro, 200).build();
+
+		avaliador.avaliaLances(leilao);
+
+		assertEquals(200, avaliador.getMaiorValor(), 0.001);
+
+
+	}
+
 
 	@Test
 	public void devePermitirLancesEmOrdemAscendente() {

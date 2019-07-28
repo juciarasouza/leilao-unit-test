@@ -27,6 +27,8 @@ public class AvaliaLances {
 				valorMaiorQue = lance.getValorLance();
 			if (lance.getValorLance() < valorMenorQue)
 				valorMenorQue = lance.getValorLance();
+			
+			
 
 			total += lance.getValorLance();
 		}
